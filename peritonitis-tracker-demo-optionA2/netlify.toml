@@ -1,0 +1,13 @@
+[build]
+  base = "peritonitis-tracker-demo-optionA2/peritonitis-tracker-demo-optionA2"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback (safe even if you don’t use routes)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
